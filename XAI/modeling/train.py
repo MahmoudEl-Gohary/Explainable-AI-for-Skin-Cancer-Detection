@@ -108,7 +108,7 @@ def train_model(
 
             # Create a grid of images and write to TensorBoard
             img_grid = torchvision.utils.make_grid(inputs.cpu())
-            writer.add_image("train_images", img_grid, global_step=epoch)
+            # writer.add_image("train_images", img_grid, global_step=epoch)
 
             # Forward pass
             outputs = model(inputs)
