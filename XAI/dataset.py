@@ -192,7 +192,7 @@ def get_transforms(stage="train"):
         )
 
 
-def prepare_data(metadata_path=None, balanced=True, is_binary=False):
+def prepare_data(metadata_path=None, balanced=False, is_binary=False):
     """
     Prepare train, validation, and test datasets.
 
@@ -300,4 +300,4 @@ if __name__ == "__main__":
     # If run as a script, download and organize the dataset
     download_and_extract_ham10000()
     organize_data()
-    prepare_data(balanced=False)
+    prepare_data()
