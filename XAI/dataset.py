@@ -300,4 +300,4 @@ if __name__ == "__main__":
     # If run as a script, download and organize the dataset
     download_and_extract_ham10000()
     organize_data()
-    prepare_data()
+    prepare_data(balanced=False)
